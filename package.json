@@ -1,7 +1,6 @@
 {
   "name": "project5",
   "version": "0.1.0",
-  "homepage" : "https://vicky-patel7.github.io/utilitysite",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",

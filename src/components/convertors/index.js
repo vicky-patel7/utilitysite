@@ -7,6 +7,11 @@ import Temperature from './Temperature';
 import Time from './Time';
 import Volume from './Volume';
 import Weight from './Weight';
+import Density from './Density';
+import HighPressure from './HighPressure';
+import LowPressure from './LowPressure';
+import Speed from './Speed';
+import Torque from './Torque';
 
 
 export {
@@ -18,5 +23,10 @@ export {
     Temperature,
     Time,
     Volume,
-    Weight
+    Weight,
+    Density,
+    HighPressure,
+    LowPressure,
+    Speed,
+    Torque,
 }
