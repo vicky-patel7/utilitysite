@@ -12,6 +12,7 @@ import HighPressure from './HighPressure';
 import LowPressure from './LowPressure';
 import Speed from './Speed';
 import Torque from './Torque';
+import Currency from './Currency';
 
 
 export {
@@ -29,4 +30,5 @@ export {
     LowPressure,
     Speed,
     Torque,
+    Currency,
 }

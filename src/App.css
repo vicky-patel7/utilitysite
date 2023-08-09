@@ -1,8 +1,9 @@
-/* a {
-    text-decoration: none;
-    font-size: 1.2rem;
+body {
+    margin: 0;
+    padding: 0;
 }
-a:hover {
-    transform: perspective(300px) rotateX(45deg);
-} */
-
+.app-main {
+    margin: 0 0;
+    padding: 0 0;
+    overflow: hidden;
+}

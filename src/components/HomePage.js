@@ -5,7 +5,9 @@ import {
     CompoundInterest, SimpleInterest, Temperature, Area, Length, Volume, Time, Angle, Weight, Density, HighPressure, LowPressure,
     Speed,
     Torque,
+    Currency,
 } from './convertors/index';
+import CurrentTemp from './CurrentTemp';
 
 const HomePage = () => {
     return (
@@ -21,8 +23,9 @@ const HomePage = () => {
                 marginTop: '20px',
                 marginRight: '20px',
                 padding: '10px',
-                width: '25%',
-                height: '100vh'
+                width: '20%',
+                height: '100vh',
+                rowGap : '2px',
             }}>
                 <Link className='link' to='/'>Temperature</Link>
                 <Link className='link' to='/simple'>Simple Interest</Link>
@@ -38,9 +41,10 @@ const HomePage = () => {
                 <Link className='link' to='/lowpressure' >Low Pressure</Link>
                 <Link className='link' to='/speed' >Speed</Link>
                 <Link className='link' to='/torque' >Torque</Link>
+                <Link className='link' to='/currency' >Currency</Link>
             </Stack>
             <Stack sx={{
-                width: '50%',
+                width: '55%',
                 height: '100vh',
                 padding: '10px',
             }}>
@@ -59,12 +63,13 @@ const HomePage = () => {
                     <Route path='/lowpressure' element={<LowPressure />} />
                     <Route path='/speed' element={<Speed />} />
                     <Route path='/torque' element={<Torque />} />
+                    <Route path='/currency' element={<Currency />} />
                 </Routes>
             </Stack>
             <Stack sx={{
                 width: '25%',
             }}>
-
+                <CurrentTemp />
             </Stack>
         </Stack>
     )
