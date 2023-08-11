@@ -1,26 +1,38 @@
 import React from 'react'
 import HomePage from './components/HomePage';
-import { Typography, Stack } from '@mui/material'
+import { Typography, Stack, Button } from '@mui/material'
 import './App.css';
 const App = () => {
   return (
     <Stack className='app-main'>
-        <Typography variant='h2' sx={{
-          backgroundColor: '#304C89',
-          color : '#CDC392',
-          padding : '7px',
-          margin : '0px',
-          fontSize : '2.3rem',
-        }}>
+      <Stack spacing={1} sx={{
+        backgroundColor: '#304C89',
+        color: '#CDC392',
+        padding: '7px',
+        margin: '0px',
+        display: 'flex',
+        flexDirection: "row",
+        justifyContent: 'space-between'
+      }}>
+        <Stack>
+          <Typography variant='h4' >
             Convertor & Calculator
-        </Typography>
-        <Stack className='app-main' sx={{
-          width : '100%',
-          padding : '10px',
-          marginRight : '10px',
-        }}>
-            <HomePage />
+          </Typography>
         </Stack>
+        <Stack sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '8px',
+          alignItems: 'center',
+        }}>
+          <Button variant='contained' color='success'>Feedback</Button>
+          <Button variant='contained' color='secondary'>Login</Button>
+        </Stack>
+      </Stack>
+      
+      <Stack>
+        <HomePage />
+      </Stack>
     </Stack>
   )
 }

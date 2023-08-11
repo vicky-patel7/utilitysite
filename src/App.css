@@ -7,3 +7,51 @@ body {
     padding: 0 0;
     overflow: hidden;
 }
+.link {
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+.img-icon {
+    width: 120px;
+}
+
+.wave {
+    opacity : 0.3;
+    position : absolute;
+    top : 120%;
+    left : 50%;
+    background : white;
+    width : 50rem;
+    height : 50rem;
+    margin-left : -25rem;
+    margin-top : -25rem;
+    transform-origin : 50% 48%;
+    border-radius : 43%;
+    animation : drift 5000 infinite linear;
+    z-index : 1;
+}
+
+.two {
+    opacity: 0.1;
+    animation: drift 7000 infinite linear;
+    z-index: 2;
+}
+
+.three {
+    opacity: 0.2;
+    animation: drift 3000 infinite linear;
+    z-index: 3;
+}
+
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

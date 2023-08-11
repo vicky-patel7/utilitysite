@@ -68,6 +68,8 @@ const HomePage = () => {
             </Stack>
             <Stack sx={{
                 width: '25%',
+                margin : '10px',
+                height : '100vh',
             }}>
                 <CurrentTemp />
             </Stack>

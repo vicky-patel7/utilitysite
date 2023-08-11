@@ -22,7 +22,6 @@ const Area = () => {
   }
   useEffect(() => {
     try {
-      console.log(sourceValue)
       setResult(convertArea(sourceUnit, targetUnit, sourceValue));
     } catch (e) {
       console.log(e.message);

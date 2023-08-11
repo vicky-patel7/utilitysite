@@ -9,7 +9,6 @@ const Length = () => {
   const [targetUnit, setTargetUnit] = useState('meter');
   const [sourceValue, setSourceValue] = useState();
   const [result, setResult] = useState(0);
-  console.log(sourceValue, sourceUnit, targetUnit);
   
   useEffect(() => {
     try {

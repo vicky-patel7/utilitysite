@@ -10,7 +10,6 @@ const Volume = () => {
   const [targetUnit, setTargetUnit] = useState('liter');
   const [sourceValue, setSourceValue] = useState();
   const [result, setResult] = useState(0);
-  console.log(sourceValue, sourceUnit, targetUnit);
 
   useEffect(() => {
     try {

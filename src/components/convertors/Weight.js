@@ -10,7 +10,6 @@ const Weight = () => {
     const [targetUnit, setTargetUnit] = useState('gram');
     const [sourceValue, setSourceValue] = useState();
     const [result, setResult] = useState(0);
-    console.log(sourceValue, sourceUnit, targetUnit);
 
     useEffect(() => {
         try {

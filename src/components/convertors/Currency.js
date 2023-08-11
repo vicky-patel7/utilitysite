@@ -15,6 +15,7 @@ const Currency = () => {
   const [result, setResult] = useState();
   const host = 'api.frankfurter.app';
   useEffect(() => {
+    let subscribe = true;
     if(targetUnit === sourceUnit) {
       setResult(sourceValue);
     }
@@ -22,8 +23,10 @@ const Currency = () => {
       fetch(`https://${host}/latest?amount=${sourceValue}&from=${sourceUnit}&to=${targetUnit}`)
         .then(resp => resp.json())
         .then((data) => {
-          const res = data.rates[targetUnit];
-          setResult((prev) => res);
+          if(subscribe){
+            const res = data.rates[targetUnit];
+            setResult((prev) => res);
+          }
         })
         .catch(error => {
           console.log(error);
@@ -32,7 +35,7 @@ const Currency = () => {
       console.log('Error fetching the data');
     }
     return () => {
-
+      subscribe = false;
     }
   }, [sourceValue, targetUnit, sourceUnit])
 
